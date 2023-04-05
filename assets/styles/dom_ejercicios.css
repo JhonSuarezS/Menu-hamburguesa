@@ -3,6 +3,7 @@
     --main-font:sans-serif; /* Variable tipografía */
     --font-size: 16px;  /* Variable tamaño de la letra */
     --main-color: #f7df1e;  /* Variable color principal */
+    --main-color-2: #7e7e7e;  /* Variable color principal */
     --second-color: #222;  /* Variable color secundario */
     --main-modal-color: rgba(247,222,30,0.85);  /* Variable color principal pero bajando la opacidad(0.85) */
     --second-modal-color: rgba(34,34,34,0.85);  /* Variable color secundario pero bajando la opacidad(0.85) */
@@ -90,6 +91,11 @@ img{
     justify-content: center;    
     align-items: center;
     background-color: var(--main-color);
+    border: none;
+}
+
+.panel-boton:hover{
+    background-color: var(--main-modal-color);
 }
 
 .menu{
@@ -131,4 +137,31 @@ img{
     height: 4rem;
     border-radius: 50%;
     background-color: var(--main-color);
+}
+
+/* ******* eventos de teclado ******** */
+
+.scroll-top-btn{
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    right: calc(4.52rem + 1vw);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    border: none;
+}
+
+.scroll-top-btn:hover{
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
 }
