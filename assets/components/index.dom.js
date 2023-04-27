@@ -1,6 +1,7 @@
 import scrollTopBtn from "./boton-scroll.js";
 import countdown from "./cuenta_regresiva.js";
 import webCam from "./deteccion_webcam.js";
+import filtroImage from "./filtro_busqueda.js";
 import getGeolocation from "./geolocalizacion.js";
 import hamburgerMenu from "./menu_hamburguesa.js";
 import responsiveMedia from "./objeto_responsive.js";
@@ -30,6 +31,7 @@ d.addEventListener("DOMContentLoaded", e =>{
     );
     webCam("webcam");
     getGeolocation("geolocalizacion");
+    filtroImage(".card-filter",".card");
 });
 
 d.addEventListener("keydown", (e) =>{
