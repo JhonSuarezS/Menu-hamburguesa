@@ -6,6 +6,7 @@ import getGeolocation from "./geolocalizacion.js";
 import hamburgerMenu from "./menu_hamburguesa.js";
 import responsiveMedia from "./objeto_responsive.js";
 import { digitalClock, alarm } from "./reloj.js";
+import drow from "./sorteo_digital.js";
 import { moveBall } from "./teclado.js";
 import darkTheme from "./tema_oscuro.js";
 
@@ -32,6 +33,7 @@ d.addEventListener("DOMContentLoaded", e =>{
     webCam("webcam");
     getGeolocation("geolocalizacion");
     filtroImage(".card-filter",".card");
+    drow("#winner-btn",".player","winner")
 });
 
 d.addEventListener("keydown", (e) =>{

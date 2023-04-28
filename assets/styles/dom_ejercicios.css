@@ -38,6 +38,7 @@ img{
 
 .header {
     position: sticky; /*  */
+    z-index: 999;
     top: 0;  /* */
     padding: 1rem; /* */
     background-color: var(--main-color);  /* */
@@ -204,6 +205,8 @@ img{
 .card img{
     width: 100%;
     height: auto;
+    position:relative;
+    display:block;
 }
 
 .card figcaption{
@@ -217,5 +220,30 @@ img{
     visibility: collapse ;
     opacity: 0;
     order: 1;
+}
+
+.article{
+    position:relative;
+    display:block;
+}
+
+.dark-theme-btn{
+    z-index: 1;
+}
+
+.winner{
+    background-color: aquamarine;
+}
+
+.player{
+    list-style:none
+}
+
+.players{
+    display: grid;
+    column-gap: 20px;
+    row-gap: 50px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
 }
 
