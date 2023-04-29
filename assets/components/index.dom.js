@@ -1,4 +1,5 @@
 import scrollTopBtn from "./boton-scroll.js";
+import slider from "./carrusel.js";
 import countdown from "./cuenta_regresiva.js";
 import webCam from "./deteccion_webcam.js";
 import filtroImage from "./filtro_busqueda.js";
@@ -33,7 +34,8 @@ d.addEventListener("DOMContentLoaded", e =>{
     webCam("webcam");
     getGeolocation("geolocalizacion");
     filtroImage(".card-filter",".card");
-    drow("#winner-btn",".player","winner")
+    drow("#winner-btn",".player","winner");
+    slider();
 });
 
 d.addEventListener("keydown", (e) =>{

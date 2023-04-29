@@ -6,7 +6,7 @@ export default function drow (btn,selector,ganador) {
         const $players = d.querySelectorAll(selector),
           random = Math.floor(Math.random()*$players.length),
           winner = $players[random];
-        console.log($players)
+        // console.log($players)
 
     return `El ganador es: ${winner.textContent}`;
     }
